@@ -7,24 +7,24 @@ sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra
 
 sudo apt remove -y xterm vim*
 
-mkdir ~/.config/polybar
-mv config.ini ~/.config/polybar
+INSTALL_DIR="$HOME/openbox-configs"
 
-mkdir ~/.config/openbox
-mv rc.xml ~/.config/openbox
+mkdir "$HOME/.config/polybar"
+mv "$INSTALL_DIR/config.ini" "$HOME/.config/polybar"
 
-mkdir ~/.config/openbox
-mv autostart ~/.config/openbox
+mkdir -p "$HOME/.config/openbox"
+mv "$INSTALL_DIR/autostart" "$HOME/.config/openbox"
+mv "$INSTALL_DIR/autostart" "$HOME/.config/openbox"
 
-mkdir -p ~/.config/alacritty
-mv alacritty.yml ~/.config/alacritty
+mkdir -p "$HOME/.config/alacritty"
+mv "$INSTALL_DIR/alacritty.yml" "$HOME/.config/alacritty"
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 cd
 
 curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-chrome-stable
 
 curl -LO "https://github.com/realthunder/FreeCAD/releases/download/Tip/org.freecadweb.FreeCAD.Link.Tip_20230521.flatpak"
 flatpak install org.freecadweb.FreeCAD.Link.Tip_20230521.flatpak
