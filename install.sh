@@ -19,6 +19,8 @@ mv alacritty.yml ~/.config/alacritty
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+cd
+
 curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
