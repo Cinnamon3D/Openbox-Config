@@ -12,7 +12,7 @@ mv "config.ini" "$HOME/.config/polybar"
 
 mkdir -p "$HOME/.config/openbox"
 mv "autostart" "$HOME/.config/openbox"
-mv "rx.xml" "$HOME/.config/openbox"
+mv "rc.xml" "$HOME/.config/openbox"
 
 mkdir -p "$HOME/.config/alacritty"
 mv "alacritty.yml" "$HOME/.config/alacritty"
