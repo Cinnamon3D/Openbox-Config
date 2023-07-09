@@ -7,6 +7,12 @@ sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra
 
 sudo apt remove -y xterm vim*
 
+mkdir "$HOME/Downloads"
+mkdir "$HOME/Pictures"
+mkdir "$HOME/Freecad"
+mkdir "$HOME/Blender"
+mkdir "$HOME/Other Docs"
+
 mkdir "$HOME/.config/polybar"
 mv "config.ini" "$HOME/.config/polybar"
 
