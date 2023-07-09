@@ -19,6 +19,12 @@ mv "$INSTALL_DIR/autostart" "$HOME/.config/openbox"
 mkdir -p "$HOME/.config/alacritty"
 mv "$INSTALL_DIR/alacritty.yml" "$HOME/.config/alacritty"
 
+mkdir -p "$HOME/.config/neofetch"
+mv "$INSTALL_DIR/config.conf" "$HOME/.config/neofetch"
+
+mkdir -p "$HOME/.config/alacritty"
+sudo mv "$INSTALL_DIR/sources.list" "/etc/apt/"
+
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 cd
