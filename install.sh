@@ -28,6 +28,8 @@ mv "config.conf" "$HOME/.config/neofetch"
 
 sudo mv "sources.list" "/etc/apt"
 
+mv "Wallpaper.jpg" "$HOME/Pictures"
+
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 cd
