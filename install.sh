@@ -1,9 +1,11 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install -y openbox rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop flatpak
+sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop flatpak
 sudo apt install -y freecad blender prusa-slicer solvespace
 sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
+
+sudo apt remove -y xterm vim*
 
 mkdir ~/.config/polybar
 mv config.ini ~/.config/polybar
