@@ -2,7 +2,6 @@ sudo apt update -y
 sudo apt upgrade -y
 
 sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop flatpak
-sudo apt install -y freecad blender prusa-slicer solvespace
 sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
 
 sudo apt remove -y xterm vim*
@@ -36,9 +35,6 @@ cd
 
 curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sudo apt install -y ./google-chrome-stable
-
-curl -LO "https://github.com/realthunder/FreeCAD/releases/download/Tip/org.freecadweb.FreeCAD.Link.Tip_20230521.flatpak"
-flatpak install org.freecadweb.FreeCAD.Link.Tip_20230521.flatpak
 
 sudo apt autoremove -y
 
