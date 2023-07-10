@@ -1,7 +1,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop xinput flatpak
+sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop xinput policykit-1 flatpak
 sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
 
 sudo apt remove -y xterm vim*
@@ -34,8 +34,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 cd
 
 curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-sudo apt install -y ./google-chrome-stable
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
+sudo apt update -y
+sudo apt upgrade -y
 sudo apt autoremove -y
 
 echo "run rofi-theme-selector, obconf, lxappearance, and nitrogen"
