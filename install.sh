@@ -1,8 +1,22 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala curl git bluez blueman network-manager i3lock-fancy brightnessctl zip neofetch btop xinput policykit-1 flatpak
+#Install main GUI programs
+sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala i3lock-fancy flatpak
+#Install audio
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa bluez blueman
+#Installl background tools
+sudo apt install -y brightnessctl zip xinput policykit-1 xbindkeys xvkbd build-essential intel-microcode dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends network-manager network-manager-gnome curl
+#Install other tools (added later)
+sudo apt install -y dunst dbus-x11 hsetroot libnotify-bin lximage-qt menu picom qt5-style-plugins scrot xfce4-power-manager
+#Install extras
+sudo apt install -y neofetch btop
+#install themes
 sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
+
+sudo systemctl enable avahi-daemon
+sudo systemctl enable acpid
+sudo systemctl enable NetworkManager
 
 sudo apt remove -y xterm vim*
 
