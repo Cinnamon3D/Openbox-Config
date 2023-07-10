@@ -3,10 +3,8 @@ sudo apt upgrade -y
 
 #Install main GUI programs
 sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitrogen nala i3lock-fancy flatpak
-#Install audio
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa bluez blueman
 #Installl background tools
-sudo apt install -y brightnessctl zip xinput policykit-1 build-essential network-manager network-manager-gnome curl
+sudo apt install -y brightnessctl zip xinput policykit-1 build-essential network-manager network-manager-gnome curl bluez blueman
 #Install extras
 sudo apt install -y neofetch btop
 #install themes
