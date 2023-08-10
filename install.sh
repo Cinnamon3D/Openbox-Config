@@ -17,7 +17,7 @@ sudo apt remove -y xterm vim*
 mkdir "$HOME/Downloads"
 mkdir "$HOME/Pictures"
 
-mkdir "$HOME/.config/polybar"
+mkdir -p "$HOME/.config/polybar"
 mv "config.ini" "$HOME/.config/polybar"
 
 mkdir -p "$HOME/.config/openbox"
