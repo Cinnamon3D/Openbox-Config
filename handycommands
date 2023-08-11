@@ -1,0 +1,7 @@
+nmcli device set wlp58s0 managed yes
+nmcli device connect wlp58s0
+rfkill unblock wifi
+sudo modprobe -r ath10k_pci
+sudo modprobe ath10k_pci
+nmcli
+sudo nano /etc/NetworkManager
