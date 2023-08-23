@@ -1,1 +1,38 @@
+sudo apt update -y
+sudo apt upgrade -y
 
+#Install main GUI programs
+sudo apt install -y i3 xorg lxappearance alacritty thunar nitrogen nala i3lock-fancy flatpak
+#Installl background tools
+sudo apt install -y brightnessctl zip xinput policykit-1 build-essential network-manager network-manager-gnome curl bluez blueman
+#Install extras
+sudo apt install -y neofetch btop
+#install themes
+sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
+
+sudo systemctl enable NetworkManager
+
+sudo apt remove -y rxvt-unicode
+
+mkdir -p "$HOME/.config/alacritty"
+mv "alacritty.yml" "$HOME/.config/alacritty"
+
+mkdir -p "$HOME/.config/neofetch"
+mv "config.conf" "$HOME/.config/neofetch"
+
+sudo mv "sources.list" "/etc/apt"
+
+mv "Wallpaper.jpg" "$HOME/Pictures"
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+cd
+
+curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
+
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt autoremove -y
+
+echo "run rofi-theme-selector, obconf, lxappearance, and nitrogen"
