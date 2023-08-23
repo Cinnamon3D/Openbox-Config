@@ -1,3 +1,1 @@
-openbox-config
-chmod +X install.sh
-./install.sh
+My configs for Openbox, I3wm, and any other WM I add
