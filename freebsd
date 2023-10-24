@@ -16,3 +16,6 @@ mkdir -p "$HOME/.config/alacritty"
 mv "alacritty.yml" "$HOME/.config/alacritty"
 
 mv "Wallpaper.jpg" "$HOME/Pictures"
+
+
+echo "micro ~/.xinitrc exec openbox-session"
