@@ -1,6 +1,6 @@
 #Install main GUI programs
 sudo pkg install openbox xorg rofi lxappearance polybar alacritty thunar nitrogen  drm-kmod
-sudo pkg install neofetch btop micro
+sudo pkg install neofetch btop micro py39-ranger python
 
 mkdir "$HOME/Downloads"
 mkdir "$HOME/Pictures"
@@ -21,3 +21,5 @@ touch ~/.xinitrc
 echo "exec openbox-session" >> ~/.xinitrc
 
 sudo sysrc kld_list+=i915kms
+
+sudo pw groupmod video -m cinnamon
