@@ -20,4 +20,4 @@ mv "Wallpaper.jpg" "$HOME/Pictures"
 touch ~/.xinitrc
 echo "exec openbox-session" >> ~/.xinitrc
 
-sysrc kld_list+=i915kms
+sudo sysrc kld_list+=i915kms
