@@ -17,5 +17,5 @@ mv "alacritty.yml" "$HOME/.config/alacritty"
 
 mv "Wallpaper.jpg" "$HOME/Pictures"
 
-
-echo "micro ~/.xinitrc exec openbox-session"
+touch ~/.xinitrc
+echo "exec openbox-session" >> ~/.xinitrc
