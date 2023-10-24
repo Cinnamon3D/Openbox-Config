@@ -1,5 +1,5 @@
 #Install main GUI programs
-sudo pkg install openbox xorg rofi lxappearance polybar alacritty thunar nitrogen
+sudo pkg install openbox xorg rofi lxappearance polybar alacritty thunar nitrogen  drm-kmod
 sudo pkg install neofetch btop micro
 
 mkdir "$HOME/Downloads"
@@ -19,3 +19,5 @@ mv "Wallpaper.jpg" "$HOME/Pictures"
 
 touch ~/.xinitrc
 echo "exec openbox-session" >> ~/.xinitrc
+
+sysrc kld_list+=i915kms
