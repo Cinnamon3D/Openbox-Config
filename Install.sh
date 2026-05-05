@@ -6,7 +6,7 @@ sudo apt install -y openbox xorg rofi lxappearance polybar alacritty thunar nitr
 #Installl background tools
 sudo apt install -y brightnessctl zip xinput policykit-1 build-essential network-manager network-manager-gnome curl bluez blueman
 #Install extras
-sudo apt install -y neofetch btop
+sudo apt install -y fastfetch btop ranger
 #install themes
 sudo apt install -y breeze-cursor-theme breeze-gtk-theme gnome-themes-extra 
 
@@ -35,11 +35,6 @@ sudo mv "sources.list" "/etc/apt"
 mv "Wallpaper.jpg" "$HOME/Pictures"
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-cd
-
-curl -LO "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 sudo apt update -y
 sudo apt upgrade -y
